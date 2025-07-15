@@ -53,7 +53,7 @@ const CentralNavbar = () => {
               <img 
                 src="/lovable-uploads/18f2c9f2-1632-4bf2-b0aa-70a38d4e33b6.png"
                 alt="VB Logo"
-                className="h-8 w-auto"
+                className="h-12 w-auto" // aumentei de h-8 para h-12
                 style={{ filter: 'brightness(2.5) contrast(1.5) saturate(1.2)' }}
               />
             </Link>
