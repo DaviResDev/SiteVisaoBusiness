@@ -54,7 +54,7 @@ const Index = () => {
             }}
           />
           <div className="fixed inset-0 bg-gradient-to-b from-black/70 via-blue-950/50 to-black/80" style={{zIndex: 1}} />
-
+          
           <div className="relative z-10">
             {/* Services Overview */}
             <ServicesOverview />

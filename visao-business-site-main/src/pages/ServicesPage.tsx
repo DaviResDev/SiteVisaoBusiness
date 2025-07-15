@@ -147,7 +147,7 @@ const ServicesPage = () => {
               {services.map((service, index) => (
                 <div 
                   key={index}
-                  className="group bg-white/5 backdrop-blur-md border border-blue-500/20 rounded-2xl p-8 hover:bg-white/10 hover:border-blue-400/40 hover:scale-105 transition-all duration-500 animate-slide-up"
+                  className="group bg-transparent border border-blue-400/30 rounded-2xl p-8 hover:bg-blue-400/5 hover:border-blue-400/40 hover:scale-105 transition-all duration-500 animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="bg-blue-500/20 w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 group-hover:bg-blue-500/30 group-hover:scale-110 transition-all duration-300">

@@ -83,34 +83,34 @@ const ContactPage = () => {
           {/* Contact Form and Info */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="bg-white/10 backdrop-blur-md border border-blue-500/30 rounded-3xl p-8 text-white shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6 font-satoshi">Como nos encontrar</h3>
-                <div className="space-y-6">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                      <Mail className="w-6 h-6 text-blue-400" />
+                <div className="bg-white/10 backdrop-blur-md border border-blue-500/30 rounded-3xl p-8 text-white shadow-2xl">
+                  <h3 className="text-2xl font-bold mb-6 font-satoshi">Como nos encontrar</h3>
+                  <div className="space-y-6">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
+                        <Mail className="w-6 h-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <div className="font-medium font-satoshi">E-mail</div>
+                        <div className="text-gray-300 font-satoshi">visaobusinesstech@gmail.com</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="font-medium font-satoshi">E-mail</div>
-                      <div className="text-gray-300 font-satoshi">visaobusinesstech@gmail.com</div>
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
+                        <Phone className="w-6 h-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <div className="font-medium font-satoshi">WhatsApp</div>
+                        <div className="text-gray-300 font-satoshi">+55 41 9777-2066</div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                      <Phone className="w-6 h-6 text-blue-400" />
-                    </div>
-                    <div>
-                      <div className="font-medium font-satoshi">WhatsApp</div>
-                      <div className="text-gray-300 font-satoshi">+55 41 9777-2066</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                      <MapPin className="w-6 h-6 text-blue-400" />
-                    </div>
-                    <div>
-                      <div className="font-medium font-satoshi">Localização</div>
-                      <div className="text-gray-300 font-satoshi">Curitiba, PR - Brasil</div>
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
+                        <MapPin className="w-6 h-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <div className="font-medium font-satoshi">Localização</div>
+                        <div className="text-gray-300 font-satoshi">Curitiba, PR - Brasil</div>
                     </div>
                   </div>
                 </div>

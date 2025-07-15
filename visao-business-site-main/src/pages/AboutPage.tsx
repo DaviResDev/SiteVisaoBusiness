@@ -152,13 +152,13 @@ const AboutPage = () => {
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-8 hover:bg-white/10 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer">
+                <div className="group relative bg-transparent border border-blue-400/30 rounded-2xl p-8 hover:bg-blue-400/5 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer">
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                   </div>
                   
-                  <div className="bg-blue-500/20 w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:bg-blue-500/30 group-hover:scale-110 transition-all duration-300">
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:scale-110 transition-all duration-300">
                     <Zap className="w-10 h-10" />
                   </div>
                   
@@ -174,13 +174,13 @@ const AboutPage = () => {
                   </p>
                 </div>
 
-                <div className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-8 hover:bg-white/10 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer" style={{ animationDelay: '0.2s' }}>
+                <div className="group relative bg-transparent border border-blue-400/30 rounded-2xl p-8 hover:bg-blue-400/5 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer" style={{ animationDelay: '0.2s' }}>
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                   </div>
                   
-                  <div className="bg-blue-500/20 w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:bg-blue-500/30 group-hover:scale-110 transition-all duration-300">
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:scale-110 transition-all duration-300">
                     <Rocket className="w-10 h-10" />
                   </div>
                   
@@ -196,13 +196,13 @@ const AboutPage = () => {
                   </p>
                 </div>
 
-                <div className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-8 hover:bg-white/10 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer" style={{ animationDelay: '0.4s' }}>
+                <div className="group relative bg-transparent border border-blue-400/30 rounded-2xl p-8 hover:bg-blue-400/5 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-500 animate-slide-up cursor-pointer" style={{ animationDelay: '0.4s' }}>
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-pulse"></div>
                   </div>
                   
-                  <div className="bg-blue-500/20 w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:bg-blue-500/30 group-hover:scale-110 transition-all duration-300">
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center text-blue-400 mb-6 mx-auto group-hover:scale-110 transition-all duration-300">
                     <Target className="w-10 h-10" />
                   </div>
                   
@@ -233,18 +233,18 @@ const AboutPage = () => {
                   <CarouselContent>
                     {team.map((member, index) => (
                       <CarouselItem key={index}>
-                        <div className="bg-gradient-to-br from-blue-950/60 to-blue-900/40 border border-blue-400/30 rounded-2xl p-6 backdrop-blur-sm hover:bg-gradient-to-br hover:from-blue-950/80 hover:to-blue-900/60 transition-all duration-500 shadow-2xl h-80">
-                          <div className="flex flex-col items-center text-center h-full">
+                        <div className="bg-gradient-to-br from-blue-950/60 to-blue-900/40 border border-blue-400/30 rounded-2xl p-8 md:p-10 backdrop-blur-sm hover:bg-gradient-to-br hover:from-blue-950/80 hover:to-blue-900/60 transition-all duration-500 shadow-2xl flex items-center justify-center min-h-[20rem] w-full max-w-3xl mx-auto">
+                          <div className="flex flex-col items-center text-center w-full">
                             {member.image ? (
-                              <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-blue-400/40 mb-4 shadow-lg">
+                              <div className="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-blue-400/40 mb-6 shadow-lg flex items-center justify-center bg-blue-900/30">
                                 <img 
                                   src={member.image} 
                                   alt={member.name}
-                                  className="w-full h-full object-cover"
+                                  className="w-full h-full object-contain"
                                 />
                               </div>
                             ) : (
-                              <div className="w-32 h-32 bg-gradient-to-br from-blue-500/30 to-blue-600/20 border-2 border-blue-400/40 rounded-full flex items-center justify-center text-blue-300 mb-4 shadow-lg">
+                              <div className="w-36 h-36 md:w-40 md:h-40 bg-gradient-to-br from-blue-500/30 to-blue-600/20 border-2 border-blue-400/40 rounded-full flex items-center justify-center text-blue-300 mb-6 shadow-lg">
                                 {member.icon}
                               </div>
                             )}

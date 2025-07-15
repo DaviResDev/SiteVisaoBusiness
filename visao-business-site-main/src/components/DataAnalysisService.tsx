@@ -84,7 +84,7 @@ const DataAnalysisService = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.title}
-              className="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-blue-500/30 hover:bg-white/20 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 animate-slide-up group"
+              className="bg-transparent border border-blue-400/30 p-6 rounded-xl hover:bg-blue-400/5 hover:border-blue-400/60 transition-all duration-300 hover:scale-105 animate-slide-up group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="bg-blue-500/30 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500/50 transition-all duration-300">
