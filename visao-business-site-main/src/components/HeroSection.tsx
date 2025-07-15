@@ -61,14 +61,14 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-6">
               <button 
                 onClick={handleScheduleDemo}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-8 py-4 rounded-xl border border-blue-500/30 shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-blue-700 hover:to-blue-800 hover:shadow-blue-500/40 hover:scale-105 font-satoshi"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-8 py-4 rounded-xl border border-blue-500/30 shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-blue-700 hover:to-blue-800 hover:shadow-blue-500/40 hover:scale-105 font-satoshi min-w-[220px]"
               >
                 <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 Agendar Demonstração
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="bg-gradient-to-r from-gray-800/60 to-blue-900/40 border border-gray-600/40 text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gradient-to-r hover:from-gray-900/70 hover:to-blue-800/50 hover:border-gray-500/50 font-satoshi backdrop-blur-sm"
+                className="bg-gradient-to-r from-gray-800/60 to-blue-900/40 border border-gray-600/40 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gradient-to-r hover:from-gray-900/70 hover:to-blue-800/50 hover:border-gray-500/50 font-satoshi backdrop-blur-sm min-w-[220px]"
               >
                 Conhecer Soluções
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
