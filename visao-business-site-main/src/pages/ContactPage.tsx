@@ -83,7 +83,7 @@ const ContactPage = () => {
           {/* Contact Form and Info */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                <div className="bg-white/10 backdrop-blur-md border border-blue-500/30 rounded-3xl p-8 text-white shadow-2xl">
+                <div className="p-8 rounded-3xl text-white border border-blue-500/30">
                   <h3 className="text-2xl font-bold mb-6 font-satoshi">Como nos encontrar</h3>
                   <div className="space-y-6">
                     <div className="flex items-center">
