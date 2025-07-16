@@ -71,6 +71,9 @@ const Index = () => {
             {/* System Development Service Section */}
             <SystemDevelopmentService />
 
+            {/* Seção de Contato (replicada da página de contato) */}
+            <ContactForm />
+
             {/* Footer */}
             <Footer />
           </div>
