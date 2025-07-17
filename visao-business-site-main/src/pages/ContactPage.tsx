@@ -4,43 +4,131 @@ import CentralNavbar from '../components/CentralNavbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useContactForm } from '../hooks/useContactForm';
+import { supabase } from '../lib/supabaseClient';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    nome: '',
     email: '',
-    company: '',
-    phone: '',
-    service: '',
-    message: ''
+    telefone: '',
+    mensagem: ''
   });
 
-  const { submitForm, isSubmitting } = useContactForm();
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      return;
-    }
 
-    const result = await submitForm(formData);
-    
-    if (result.success) {
-      // Limpar formulário após envio bem-sucedido
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
+    const formDataToSend = {
+      nome: e.currentTarget.nome.value,
+      email: e.currentTarget.email.value,
+      telefone: e.currentTarget.telefone.value,
+      mensagem: e.currentTarget.mensagem.value,
+    };
+
+    console.log('=== INICIANDO ENVIO DO FORMULÁRIO ===');
+    console.log('Dados do formulário:', formDataToSend);
+
+    try {
+      // Salvar no Supabase
+      console.log('Salvando no Supabase...');
+      const { error: supabaseError } = await supabase
+        .from('form_contatos')
+        .insert([formDataToSend]);
+
+      if (supabaseError) {
+        console.error('Erro ao salvar no Supabase:', supabaseError);
+        alert('Erro ao salvar: ' + supabaseError.message);
+        return;
+      }
+
+      console.log('Dados salvos no Supabase com sucesso!');
+
+      // Enviar email via EmailJS
+      try {
+        console.log('Iniciando EmailJS...');
+        
+        // Verificar se EmailJS está disponível
+        if (typeof emailjs === 'undefined') {
+          throw new Error('EmailJS não está carregado');
+        }
+        
+        // Inicializar EmailJS com sua Public Key CORRETA
+        emailjs.init('k2i_sTC4juysag5KY');
+        console.log('EmailJS inicializado');
+        const templateParams = {
+          from_name: formDataToSend.nome,
+          from_email: formDataToSend.email,
+          phone: formDataToSend.telefone,
+          message: formDataToSend.mensagem,
+          to_email: 'visaobusinesstech@gmail.com'
+        };
+
+        console.log('Parâmetros do template:', templateParams);
+        console.log('Service ID: service_abc123');
+        console.log('Template ID: template_okiuiku');
+        console.log('Enviando email...');
+        const emailResponse = await emailjs.send(
+          'service_abc123', // Seu Service ID já configurado
+          'template_okiuiku', // Seu Template ID
+          templateParams
+        );
+
+        console.log('Resposta do EmailJS:', emailResponse);
+
+        if (emailResponse.status === 200) {
+          console.log('Email enviado com sucesso!');
+          alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+          if (e.currentTarget) {
+            e.currentTarget.reset();
+          }
+          setFormData({
+            nome: '',
+            email: '',
+            telefone: '',
+            mensagem: ''
+          });
+        } else {
+          console.error('Erro no status do EmailJS:', emailResponse);
+          alert('Mensagem salva, mas erro ao enviar email. Entraremos em contato em breve.');
+          if (e.currentTarget) {
+            e.currentTarget.reset();
+          }
+          setFormData({
+            nome: '',
+            email: '',
+            telefone: '',
+            mensagem: ''
+          });
+        }
+      } catch (emailError: any) {
+        console.error('=== ERRO NO EMAILJS ===');
+        console.error('Tipo do erro:', emailError?.constructor?.name);
+        console.error('Mensagem do erro:', emailError?.message);
+        console.error('Status do erro:', emailError?.status);
+        console.error('Texto do erro:', emailError?.text);
+        console.error('Erro completo:', emailError);
+        alert('Mensagem salva com sucesso! Entraremos em contato em breve.');
+        if (e.currentTarget) {
+          e.currentTarget.reset();
+        }
+        setFormData({
+          nome: '',
+          email: '',
+          telefone: '',
+          mensagem: ''
+        });
+      }
+
+    } catch (error: any) {
+      console.error('=== ERRO GERAL ===');
+      console.error('Tipo do erro:', error?.constructor?.name);
+      console.error('Mensagem do erro:', error?.message);
+      console.error('Erro completo:', error);
+      alert('Erro inesperado ao enviar mensagem. Tente novamente.');
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -53,7 +141,7 @@ const ContactPage = () => {
       <div 
         className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/d60e93aa-a7a1-46a3-9f41-28931be54fe1.png')`,
+          backgroundImage: `url('/lovable-uploads/d60e93aa-a7a1-463-9128931e1.png')`,
         }}
       />
       
@@ -82,7 +170,9 @@ const ContactPage = () => {
 
           {/* Contact Form and Info */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <div className="grid lg:grid-cols-2 gap-16">
+              {/* Informações de Contato */}
+              <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <div className="p-8 rounded-3xl text-white border border-blue-500/30">
                   <h3 className="text-2xl font-bold mb-6 font-satoshi">Como nos encontrar</h3>
                   <div className="space-y-6">
@@ -111,9 +201,65 @@ const ContactPage = () => {
                       <div>
                         <div className="font-medium font-satoshi">Localização</div>
                         <div className="text-gray-300 font-satoshi">Curitiba, PR - Brasil</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Formulário */}
+              <div className="border border-blue-900/30 rounded-2xl p-10 shadow-xl backdrop-blur-md animate-slide-up" style={{ animationDelay: '0.4s' }}>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-white font-semibold mb-2">Seu nome completo</label>
+                      <input
+                        type="text"
+                        name="nome"
+                        placeholder="Seu nome completo"
+                        required
+                        className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-white font-semibold mb-2">E-mail *</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="seu@email.com"
+                        required
+                        className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                      />
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="md:col-span-2">
+                      <label className="block text-white font-semibold mb-2">Telefone</label>
+                      <input
+                        type="text"
+                        name="telefone"
+                        placeholder="(11) 99999-9999"
+                        className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-white font-semibold mb-2">Mensagem *</label>
+                    <textarea
+                      name="mensagem"
+                      placeholder="Conte-nos sobre seu projeto e como podemos ajudar..."
+                      required
+                      rows={5}
+                      className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-blue-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-800 to-blue-950 transition-all duration-300 shadow-md hover:scale-[1.02]"
+                  >
+                    <Send className="w-5 h-5 mr-2" /> Enviar Mensagem
+                  </button>
+                </form>
               </div>
             </div>
           </div>
