@@ -1,7 +1,7 @@
 
 import { supabase } from '../lib/supabaseClient';
 import React from 'react';
-import { Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
@@ -114,7 +114,7 @@ export default function ContactForm() {
             <div className="space-y-6">
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5.75A2.75 2.75 0 015.75 3h12.5A2.75 2.75 0 0121 5.75v12.5A2.75 2.75 0 0118.25 21H5.75A2.75 2.75 0 013 18.25V5.75z" /><path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01" /></svg>
+                  <Phone className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Telefone</h4>
@@ -123,7 +123,7 @@ export default function ContactForm() {
               </div>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 12a4 4 0 01-8 0m8 0a4 4 0 00-8 0m8 0V8a4 4 0 00-8 0v4m8 0v4a4 4 0 01-8 0v-4" /></svg>
+                  <Mail className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">E-mail</h4>
@@ -132,7 +132,7 @@ export default function ContactForm() {
               </div>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657A8 8 0 013.343 2.343m0 0A8 8 0 0116.657 17.657" /></svg>
+                  <MapPin className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Localização</h4>
