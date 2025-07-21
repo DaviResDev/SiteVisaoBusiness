@@ -64,9 +64,7 @@ const AutomacaoPage = () => {
                   </p>
                   
                   <p className="text-xl text-gray-300 leading-relaxed font-satoshi">
-                    Nossa plataforma de automação inteligente transforma seu atendimento em uma 
-                    <span className="text-blue-400 font-semibold"> máquina de conversão</span> que trabalha 
-                    24 horas por dia, qualifica leads automaticamente e nunca tira férias.
+                    Descubra como a principal desenvolvedora de sistemas personalizados pode transformar seu atendimento em uma máquina de conversão que trabalha 24 horas por dia, qualifica leads e nunca tira férias.
                   </p>
                 </div>
                 
@@ -96,9 +94,7 @@ const AutomacaoPage = () => {
                       Inteligência <span className="text-blue-400">Artificial</span> que Trabalha por Você
                     </h3>
                     <p className="text-gray-200 text-xl leading-relaxed mb-8 font-satoshi">
-                      Com N8N, criamos fluxos inteligentes no WhatsApp que capturam leads, qualificam interesse, 
-                      agendam reuniões e nutrem relacionamentos automaticamente. Sua empresa funcionando 24/7, 
-                      convertendo visitantes em clientes enquanto você dorme.
+                      Com o poder da automação de processos, utilizamos o N8N para criar automações inteligentes para empresas diretamente no WhatsApp. Nossos fluxos automatizados capturam leads e nutrem relacionamentos de forma automática. Sua empresa operando 24/7, convertendo visitantes em clientes enquanto você dorme.
                     </p>
                     <div className="flex items-center gap-3">
                       <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>

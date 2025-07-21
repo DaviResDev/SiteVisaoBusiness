@@ -49,8 +49,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Transformamos sua rotina com tecnologia inteligente. 
-              Soluções de microSaaS sob medida para empresas B2B.
+              Transformamos sua rotina com soluções sob medida a partir da empresa destaque no setor de tecnologia empresarial.
             </p>
             
             {/* Social Icons */}

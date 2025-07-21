@@ -19,9 +19,7 @@ const RocketMailDemo = () => {
             </h2>
             
             <p className="text-lg text-gray-300 mb-8 leading-relaxed font-satoshi">
-              Veja, na prática, como o <span className="text-blue-400">Rocket</span><span className="text-white">Mail</span> automatiza seu processo de nutrição de leads, 
-              com fluxos visuais, mensagens personalizadas e disparos inteligentes que funcionam 24/7. 
-              Neste vídeo, você verá como a ferramenta funciona por dentro e como ela se encaixa no seu time.
+              Veja, na prática, como o <span className="text-blue-400">Rocket</span><span className="text-white">Mail</span> automatiza seu processo de nutrição de leads, com fluxos visuais, mensagens personalizadas e disparos inteligentes. Neste vídeo, você verá como a ferramenta funciona por dentro e como esta solução digital ideal para o seu negócio, se encaixaria no seu time.
             </p>
 
             <div className="space-y-4 mb-8">

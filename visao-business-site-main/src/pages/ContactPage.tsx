@@ -162,8 +162,7 @@ const ContactPage = () => {
               </h1>
               
               <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12 font-satoshi">
-                Somos mais que uma empresa de tecnologia. Somos parceiros na jornada de transformação digital do seu negócio. 
-                Cada solução que desenvolvemos é pensada para gerar resultados reais e impacto positivo.
+                Com a melhor empresa de tecnologia do Brasil, seu negócio tende á impulsionar por meio da inovação. Atuamos como líder em <span className="text-blue-400">automações inteligentes</span> no país e nos consolidamos como referência em soluções empresariais, com foco em <span className="text-blue-400">resultados reais</span>.
               </p>
             </div>
           </div>
@@ -247,7 +246,7 @@ const ContactPage = () => {
                     <label className="block text-white font-semibold mb-2">Mensagem *</label>
                     <textarea
                       name="mensagem"
-                      placeholder="Conte-nos sobre seu projeto e como podemos ajudar..."
+                      placeholder="Conte-nos como nossos especialistas em tecnologia podem te ajudar..."
                       required
                       rows={5}
                       className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"

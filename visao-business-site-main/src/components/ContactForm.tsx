@@ -181,7 +181,7 @@ export default function ContactForm() {
                 <label className="block text-white font-semibold mb-2">Mensagem *</label>
                 <textarea
                   name="mensagem"
-                  placeholder="Conte-nos sobre seu projeto e como podemos ajudar..."
+                  placeholder="Conte-nos como podemos ajudar com inteligência personalizada nos negócios..."
                   required
                   rows={5}
                   className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"

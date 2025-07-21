@@ -192,7 +192,7 @@ const AnaliseDadosPage = () => {
                   title="Dashboard Interativo - Análise de Dados"
                 ></iframe>
                 <p className="text-gray-300 text-center mt-6 text-lg">
-                  ⬆️ Este é o poder da análise de dados profissional. Explore o dashboard acima e veja como 
+                  ⬆️ Este é o poder de uma análise de dados empresarial profissional. Explore o dashboard acima e veja como 
                   transformamos dados complexos em insights claros e acionáveis.
                 </p>
               </div>
@@ -254,9 +254,7 @@ const AnaliseDadosPage = () => {
                     De Reativo para Preditivo
                   </h2>
                   <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                    Pare de reagir aos problemas quando já é tarde. Com análise preditiva, 
-                    você antecipa tendências, identifica oportunidades antes dos concorrentes 
-                    e <span className="text-blue-400 font-semibold">toma decisões baseadas no futuro, não no passado.</span>
+                    Pare de reagir aos problemas quando já é tarde. Como a número 1 em análise de dados empresariais, oferecemos soluções <span className='text-blue-400'>preditivas</span> que permitem <span className='text-blue-400'>antecipar tendências</span>, identificar oportunidades antes da concorrência e tomar decisões com base no <span className='text-blue-400'>futuro</span>, não no passado.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">

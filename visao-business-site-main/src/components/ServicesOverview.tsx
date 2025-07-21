@@ -48,7 +48,7 @@ const ServicesOverview = () => {
             Nossos <span className="text-blue-400 glow-text">Serviços</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Soluções completas para automatizar, analisar e desenvolver o futuro do seu negócio
+            Soluções completas para automatizar e desenvolver o futuro do seu negócio. Uma transformação digital para sua empresa
           </p>
         </div>
 

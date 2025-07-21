@@ -198,7 +198,7 @@ const LandingPageService = () => {
 
               <div className="bg-blue-900/20 border border-blue-500/30 rounded-2xl p-8 backdrop-blur-sm">
                 <h3 className="text-2xl font-bold text-white text-center mb-8">
-                  O que você terá na sua nova Landing Page
+                  O que você terá na sua nova Landing Page Otimizada
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {results.map((result, index) => (
@@ -223,9 +223,7 @@ const LandingPageService = () => {
                     De 2% para 15% de Conversão
                   </h2>
                   <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                    Imagine transformar sua taxa de conversão de 2% para 15%. Com 1000 visitantes mensais, 
-                    isso significa sair de 20 para 150 novos clientes por mês. 
-                    <span className="text-blue-400 font-semibold"> São 130 clientes a mais!</span>
+                    Imagine transformar sua taxa de conversão de <span className='text-blue-400'>2%</span> para <span className='text-blue-400'>15%</span>. Com 1.000 visitantes mensais, isso significa sair de 20 para 150 novos clientes - um salto de <span className='text-blue-400'>130 clientes</span>. Como top 1 em desenvolvimento de landing pages profissionais, entregamos páginas que <span className='text-blue-400'>convertem</span>.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
