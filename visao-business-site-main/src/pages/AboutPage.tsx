@@ -56,7 +56,7 @@ const AboutPage = () => {
       role: "CEO & Fundador",
       area: "Estratégia e Negócios",
       email: "visaobusinesstech@gmail.com",
-      image: "/lovable-uploads/e6e11c04-55f5-4d30-92f4-9a603d40297d.png",
+      image: "https://i.imgur.com/x9SBGuR.jpeg",
       description: "CEO focado em estratégia empresarial e desenvolvimento de negócios."
     },
     {
@@ -65,6 +65,7 @@ const AboutPage = () => {
       area: "Desenvolvimento e Automações",
       email: "visaobusinesstech@gmail.com",
       icon: <Code className="w-16 h-16" />,
+      image: "https://i.postimg.cc/tT8ggqB2/55555.png",
       description: "Especialista em tecnologia e automação, responsável por transformar ideias."
     },
     {
@@ -73,7 +74,7 @@ const AboutPage = () => {
       area: "Análise de Dados e BI",
       email: "visaobusinesstech@gmail.com", 
       icon: <BarChart3 className="w-16 h-16" />,
-      description: "Analista de dados experiente que transforma números em insights estratégicos."
+      description: "Analista de dados que transforma números em insights estratégicos.",
     }
   ];
 
@@ -240,7 +241,7 @@ const AboutPage = () => {
                                 <img 
                                   src={member.image} 
                                   alt={member.name}
-                                  className="w-full h-full object-contain"
+                                  className="w-full h-full object-cover"
                                 />
                               </div>
                             ) : (

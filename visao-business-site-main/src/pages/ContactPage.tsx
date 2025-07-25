@@ -17,7 +17,7 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    
     const formDataToSend = {
       nome: e.currentTarget.nome.value,
       email: e.currentTarget.email.value,
@@ -38,8 +38,8 @@ const ContactPage = () => {
       if (supabaseError) {
         console.error('Erro ao salvar no Supabase:', supabaseError);
         alert('Erro ao salvar: ' + supabaseError.message);
-        return;
-      }
+      return;
+    }
 
       console.log('Dados salvos no Supabase com sucesso!');
 
@@ -111,9 +111,9 @@ const ContactPage = () => {
         if (e.currentTarget) {
           e.currentTarget.reset();
         }
-        setFormData({
+      setFormData({
           nome: '',
-          email: '',
+        email: '',
           telefone: '',
           mensagem: ''
         });

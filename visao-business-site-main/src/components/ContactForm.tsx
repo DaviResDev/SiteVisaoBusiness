@@ -7,7 +7,7 @@ import emailjs from 'emailjs-com';
 export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    
     const formData = {
       nome: e.currentTarget.nome.value,
       email: e.currentTarget.email.value,
@@ -28,8 +28,8 @@ export default function ContactForm() {
       if (supabaseError) {
         console.error('Erro ao salvar no Supabase:', supabaseError);
         alert('Erro ao salvar: ' + supabaseError.message);
-        return;
-      }
+      return;
+    }
 
       console.log('Dados salvos no Supabase com sucesso!');
 
@@ -71,7 +71,7 @@ export default function ContactForm() {
           alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
           if (e.currentTarget) {
             e.currentTarget.reset();
-          }
+    }
         } else {
           console.error('Erro no status do EmailJS:', emailResponse);
           alert('Mensagem salva, mas erro ao enviar email. Entraremos em contato em breve.');
@@ -147,21 +147,21 @@ export default function ContactForm() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-white font-semibold mb-2">Nome *</label>
-                  <input
-                    type="text"
+                  <input 
+                    type="text" 
                     name="nome"
                     placeholder="Seu nome completo"
-                    required
+                    required 
                     className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
                   />
                 </div>
                 <div>
                   <label className="block text-white font-semibold mb-2">E-mail *</label>
-                  <input
-                    type="email"
-                    name="email"
+                  <input 
+                    type="email" 
+                    name="email" 
                     placeholder="seu@email.com"
-                    required
+                    required 
                     className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
                   />
                 </div>
@@ -169,26 +169,26 @@ export default function ContactForm() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="md:col-span-2">
                   <label className="block text-white font-semibold mb-2">Telefone</label>
-                  <input
-                    type="text"
+                  <input 
+                    type="text" 
                     name="telefone"
-                    placeholder="(11) 99999-9999"
+                    placeholder="(11) 99999-9999" 
                     className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
               <div>
                 <label className="block text-white font-semibold mb-2">Mensagem *</label>
-                <textarea
+                <textarea 
                   name="mensagem"
                   placeholder="Conte-nos como podemos ajudar com inteligência personalizada nos negócios..."
-                  required
-                  rows={5}
+                  required 
+                  rows={5} 
                   className="w-full bg-[#101624] border border-blue-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-400 focus:outline-none transition-colors resize-none"
                 />
               </div>
-              <button
-                type="submit"
+              <button 
+                type="submit" 
                 className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-blue-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-800 hover:to-blue-950 transition-all duration-300 shadow-md hover:scale-[1.02]"
               >
                 <Send className="w-5 h-5 mr-2" />
