@@ -45,9 +45,9 @@ const HeroSection = () => {
           {/* Texto à esquerda */}
           <div className="text-left animate-fade-in relative pl-3 sm:pl-4 md:pl-0 pr-[50vw] md:pr-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-satoshi font-bold leading-tight mb-4 sm:mb-8">
-              <span className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Automatize. </span>
-              <span className="text-gray-400 text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Escale. </span>
-              <span className="text-blue-600 font-extrabold text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Inove.</span>
+              <span className="text-white">Automatize. </span>
+              <span className="text-gray-400">Escale. </span>
+              <span className="text-blue-600 font-extrabold">Inove.</span>
             </h1>
             
             <p className="text-sm sm:text-base md:text-2xl text-gray-100 mb-6 sm:mb-12 leading-snug sm:leading-relaxed max-w-xl font-satoshi">
@@ -58,17 +58,17 @@ const HeroSection = () => {
               escale com <span className="text-gray-200 font-semibold">segurança</span>.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-12 sm:mt-0">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
               <button 
                 onClick={handleScheduleDemo}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 sm:px-8 py-3 sm:py-4 rounded-xl border border-blue-500/30 shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-blue-700 hover:to-blue-800 hover:shadow-blue-500/40 hover:scale-105 font-satoshi min-w-[160px] sm:min-w-[220px] text-xs sm:text-base h-12 sm:h-auto"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 sm:px-8 py-2 sm:py-4 rounded-xl border border-blue-500/30 shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-blue-700 hover:to-blue-800 hover:shadow-blue-500/40 hover:scale-105 font-satoshi min-w-[160px] sm:min-w-[220px] text-xs sm:text-base"
               >
                 <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 Agendar Demonstração
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="bg-gradient-to-r from-gray-800/60 to-blue-900/40 border border-gray-600/40 text-white font-bold px-4 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gradient-to-r hover:from-gray-900/70 hover:to-blue-800/50 hover:border-gray-500/50 font-satoshi backdrop-blur-sm min-w-[160px] sm:min-w-[220px] text-xs sm:text-base h-12 sm:h-auto"
+                className="bg-gradient-to-r from-gray-800/60 to-blue-900/40 border border-gray-600/40 text-white font-bold px-4 sm:px-8 py-2 sm:py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gradient-to-r hover:from-gray-900/70 hover:to-blue-800/50 hover:border-gray-500/50 font-satoshi backdrop-blur-sm min-w-[160px] sm:min-w-[220px] text-xs sm:text-base"
               >
                 Conhecer Soluções
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
