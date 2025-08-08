@@ -9,20 +9,20 @@ const RocketMailDemo = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-transparent via-blue-950/20 to-transparent">
+    <section className="py-14 sm:py-20 bg-gradient-to-b from-transparent via-blue-950/20 to-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Conteúdo à esquerda */}
           <div className="animate-fade-in">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-satoshi">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-satoshi">
               Veja o <span className="text-blue-400">Rocket</span><span className="text-white">Mail</span> em ação
             </h2>
             
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed font-satoshi">
+            <p className="text-sm sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed font-satoshi">
               Veja, na prática, como o <span className="text-blue-400">Rocket</span><span className="text-white">Mail</span> automatiza seu processo de nutrição de leads, com fluxos visuais, mensagens personalizadas e disparos inteligentes. Neste vídeo, você verá como a ferramenta funciona por dentro e como esta solução digital ideal para o seu negócio, se encaixaria no seu time.
             </p>
 
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                 <span className="text-gray-200 font-satoshi">Interface intuitiva e fácil de usar</span>
@@ -39,10 +39,10 @@ const RocketMailDemo = () => {
 
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi text-sm sm:text-base"
             >
               Agendar Demonstração
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </button>
           </div>
 

@@ -49,31 +49,31 @@ const RocketMailBenefits = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-satoshi">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-satoshi">
             Por que empresas escolhem o RocketMail?
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-satoshi">
+          <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto font-satoshi">
             Resultados comprovados que fazem a diferença no seu negócio
           </p>
         </div>
 
         {/* Grid de benefícios */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
               className="group p-8 hover:scale-105 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`w-16 h-16 ${benefit.bgColor} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <benefit.icon className={`w-8 h-8 ${benefit.color}`} />
+              <div className={`w-12 h-12 sm:w-16 sm:h-16 ${benefit.bgColor} rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <benefit.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${benefit.color}`} />
               </div>
               
-              <h3 className="text-xl font-bold text-white mb-4 font-satoshi">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 font-satoshi">
                 {benefit.title}
               </h3>
               
@@ -85,22 +85,22 @@ const RocketMailBenefits = () => {
         </div>
 
         {/* Seção de estatísticas */}
-        <div className="mt-20 bg-gradient-to-r from-blue-600/10 to-blue-800/10 backdrop-blur-md rounded-2xl p-12 border border-blue-500/20">
+              <div className="mt-12 sm:mt-20 bg-gradient-to-r from-blue-600/10 to-blue-800/10 backdrop-blur-md rounded-2xl p-8 sm:p-12 border border-blue-500/20">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2 font-satoshi">10K+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-blue-400 mb-1 sm:mb-2 font-satoshi">10K+</div>
               <div className="text-gray-300 font-satoshi">Emails por campanha</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-400 mb-2 font-satoshi">300%</div>
+              <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-1 sm:mb-2 font-satoshi">300%</div>
               <div className="text-gray-300 font-satoshi">Aumento na conversão</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-purple-400 mb-2 font-satoshi">99.7%</div>
+              <div className="text-3xl sm:text-4xl font-bold text-purple-400 mb-1 sm:mb-2 font-satoshi">99.7%</div>
               <div className="text-gray-300 font-satoshi">Taxa de deliverabilidade</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-orange-400 mb-2 font-satoshi">24/7</div>
+              <div className="text-3xl sm:text-4xl font-bold text-orange-400 mb-1 sm:mb-2 font-satoshi">24/7</div>
               <div className="text-gray-300 font-satoshi">Automação ativa</div>
             </div>
           </div>

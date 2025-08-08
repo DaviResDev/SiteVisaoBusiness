@@ -98,21 +98,21 @@ const LandingPageService = () => {
         
         <main className="pt-32 pb-16">
           {/* Hero Section */}
-          <section className="py-20">
+          <section className="py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6">
                   <span className="text-white">Sua Landing Page</span>
                   <br />
                   <span className="text-blue-400">Está Perdendo Clientes</span>
                 </h1>
-                <p className="text-2xl mb-8 text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-lg sm:text-2xl mb-6 sm:mb-8 text-gray-300 max-w-4xl mx-auto leading-relaxed">
                   A cada 100 visitantes, quantos se tornam clientes? Se a resposta for menos de 10, 
                   você está deixando dinheiro na mesa todos os dias.
                 </p>
                 <button 
                   onClick={handleWhatsAppClick}
-                  className="schedule-button inline-flex items-center"
+                  className="schedule-button inline-flex items-center text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
                 >
                   Parar de Perder Clientes
                 </button>
@@ -121,13 +121,13 @@ const LandingPageService = () => {
           </section>
 
           {/* Problem Journey */}
-          <section className="py-20">
+          <section className="py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-white mb-4">
+                <h2 className="text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">
                   A Jornada do Visitante Perdido
                 </h2>
-                <p className="text-xl text-gray-300">
+                <p className="text-base sm:text-xl text-gray-300">
                   Veja como sua landing page atual está sabotando suas vendas
                 </p>
               </div>
@@ -169,20 +169,20 @@ const LandingPageService = () => {
           </section>
 
           {/* Solution Section */}
-          <section className="py-20">
+          <section className="py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-white mb-4">
+                <h2 className="text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">
                   A Transformação Começa Aqui
                 </h2>
-                <p className="text-xl text-gray-300">
+                <p className="text-base sm:text-xl text-gray-300">
                   Landing pages que convertem visitantes em clientes qualificados
                 </p>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8 mb-16">
                 {solutions.map((solution, index) => (
-                  <div key={index} className="p-8 text-center">
+                  <div key={index} className="p-6 sm:p-8 text-center">
                     <div className="w-16 h-16 bg-blue-500/20 border border-blue-500/30 rounded-xl flex items-center justify-center text-blue-400 mx-auto mb-6">
                       {solution.icon}
                     </div>
@@ -197,12 +197,12 @@ const LandingPageService = () => {
               </div>
 
               <div className="bg-blue-900/20 border border-blue-500/30 rounded-2xl p-8 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold text-white text-center mb-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-white text-center mb-6 sm:mb-8">
                   O que você terá na sua nova Landing Page Otimizada
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {results.map((result, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                  <div key={index} className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-4 h-4 text-white" />
                       </div>
@@ -215,14 +215,14 @@ const LandingPageService = () => {
           </section>
 
           {/* Transformation Section */}
-          <section className="py-20">
+          <section className="py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h2 className="text-4xl font-bold text-white mb-6">
+                  <h2 className="text-2xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
                     De 2% para 15% de Conversão
                   </h2>
-                  <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                  <p className="text-base sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                     Imagine transformar sua taxa de conversão de <span className='text-blue-400'>2%</span> para <span className='text-blue-400'>15%</span>. Com 1.000 visitantes mensais, isso significa sair de 20 para 150 novos clientes - um salto de <span className='text-blue-400'>130 clientes</span>. Como top 1 em desenvolvimento de landing pages profissionais, entregamos páginas que <span className='text-blue-400'>convertem</span>.
                   </p>
                   <div className="space-y-4">
@@ -239,8 +239,8 @@ const LandingPageService = () => {
                 
                 <div className="p-8 text-center">
                   <Users className="w-16 h-16 text-blue-400 mx-auto mb-6" />
-                  <div className="text-6xl font-bold text-blue-400 mb-2">7.5x</div>
-                  <p className="text-xl text-white font-semibold mb-4">Mais Conversões</p>
+                  <div className="text-4xl sm:text-6xl font-bold text-blue-400 mb-2">7.5x</div>
+                  <p className="text-lg sm:text-xl text-white font-semibold mb-4">Mais Conversões</p>
                   <p className="text-gray-300">
                     Aumento médio de conversão com nossas landing pages otimizadas
                   </p>
@@ -250,13 +250,13 @@ const LandingPageService = () => {
           </section>
 
           {/* Final CTA Section - Updated with removed background/border and smaller button */}
-          <section className="py-32">
+          <section className="py-24 sm:py-32">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="p-16">
-                <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 sm:mb-8">
                   Pare de Perder Clientes Hoje Mesmo
                 </h2>
-                <p className="text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-lg sm:text-2xl text-gray-300 mb-10 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
                   Cada dia que passa sem uma landing page otimizada é receita deixada na mesa. 
                   Vamos mudar isso agora.
                 </p>
@@ -264,7 +264,7 @@ const LandingPageService = () => {
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <button 
                     onClick={handleWhatsAppClick}
-                    className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 border border-blue-400"
+                    className="bg-blue-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 border border-blue-400 text-sm sm:text-base"
                   >
                     Criar Minha Landing Page
                   </button>

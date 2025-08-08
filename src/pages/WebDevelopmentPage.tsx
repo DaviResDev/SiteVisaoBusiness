@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Header from '../components/Header';
+import CentralNavbar from '../components/CentralNavbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { Code, Smartphone, Zap, Globe, ArrowRight, Target } from 'lucide-react';
@@ -31,7 +31,7 @@ const WebDevelopmentPage = () => {
 
   return (
     <div className="min-h-screen tech-background w-full">
-      <Header />
+      <CentralNavbar />
       
       <main className="pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
