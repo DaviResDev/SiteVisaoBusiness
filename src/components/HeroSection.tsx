@@ -45,7 +45,7 @@ const HeroSection = () => {
           {/* Texto à esquerda */}
           <div className="text-left animate-fade-in relative pl-3 sm:pl-4 md:pl-0 pr-[50vw] md:pr-0">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-satoshi font-bold leading-tight mb-4 sm:mb-8">
-              <span className="text-white">Automatize. </span>
+              <span className="text-white text-3xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Automatize. </span>
               <span className="text-gray-400">Escale. </span>
               <span className="text-blue-600 font-extrabold">Inove.</span>
             </h1>
