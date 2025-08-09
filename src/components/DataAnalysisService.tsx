@@ -47,7 +47,7 @@ const DataAnalysisService = () => {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-center mb-8 sm:mb-16">
           <div className="animate-fade-in">
             <div className="rounded-2xl p-3 sm:p-6">
-              <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '16/10', height: '200px', sm: '300px' }}>
+              <div className="rounded-lg overflow-hidden w-full aspect-[16/9] max-h-[340px] sm:max-h-[380px] md:max-h-[420px] lg:max-h-[440px] xl:max-h-[460px]">
                 <iframe
                   src="https://app.powerbi.com/view?r=eyJrIjoiNmJmNGVlMDUtOWM1Mi00MWU2LWJlMzctNWVmMTI0ZTE1MzEzIiwidCI6IjMzYzBkZTljLTdiYjgtNDZlZC05ZmM2LTM1MjNjMjFjNzE2OCJ9"
                   className="w-full h-full rounded-lg"
