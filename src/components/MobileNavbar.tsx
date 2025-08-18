@@ -122,8 +122,8 @@ const MobileNavbar = () => {
               </button>
             </div>
 
-            {/* Links do menu - com scroll */}
-            <div className="flex-1 px-4 py-6 space-y-4 overflow-y-auto">
+            {/* Links do menu */}
+            <div className="flex-1 px-4 py-6 space-y-4">
               {/* Links principais */}
               <div className="space-y-2">
                 <h3 className="text-white/60 text-xs font-medium uppercase tracking-wider mb-3">

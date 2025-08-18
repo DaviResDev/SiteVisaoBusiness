@@ -47,23 +47,23 @@ const AutomacaoPage = () => {
       <div className="relative z-10">
         <CentralNavbar />
         
-        <main className="pt-24 sm:pt-32 pb-16">
+        <main className="pt-32 pb-16">
           {/* Hero Section - Narrative Style */}
-          <section className="py-16 sm:py-20">
+          <section className="py-20">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center animate-fade-in">
-                <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold mb-6 sm:mb-8 font-satoshi leading-tight">
+                <h1 className="text-6xl md:text-7xl font-bold mb-8 font-satoshi leading-tight">
                   <span className="text-white">Automações</span>
                   <br />
                   <span className="text-blue-400">Inteligentes</span>
                 </h1>
                 
-                <div className="max-w-4xl mx-auto mb-10 sm:mb-12">
-                  <p className="text-lg sm:text-2xl md:text-3xl text-gray-200 mb-6 sm:mb-8 leading-relaxed font-satoshi">
+                <div className="max-w-4xl mx-auto mb-12">
+                  <p className="text-2xl md:text-3xl text-gray-200 mb-8 leading-relaxed font-satoshi">
                     Imagine nunca mais perder um <span className="text-blue-400">cliente potencial</span> por demora no atendimento...
                   </p>
                   
-                  <p className="text-base sm:text-xl text-gray-300 leading-relaxed font-satoshi">
+                  <p className="text-xl text-gray-300 leading-relaxed font-satoshi">
                     Descubra como a principal desenvolvedora de sistemas personalizados pode transformar seu atendimento em uma máquina de conversão que trabalha 24 horas por dia, qualifica leads e nunca tira férias.
                   </p>
                 </div>
@@ -71,7 +71,7 @@ const AutomacaoPage = () => {
                 <div className="flex justify-center">
                   <button 
                     onClick={handleWhatsAppClick}
-                    className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi text-sm sm:text-base"
+                    className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi"
                   >
                     <MessageSquare className="w-5 h-5 mr-2" />
                     Ver Automação em Ação
@@ -85,20 +85,20 @@ const AutomacaoPage = () => {
           {/* Seção removida: 'A História que Todo Empresário Conhece' */}
 
           {/* Expanded IA Section */}
-          <section className="py-20 sm:py-40">
+          <section className="py-40">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="animate-fade-in">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                   <div className="order-2 lg:order-1">
-                    <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-6 sm:mb-8 font-satoshi">
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 font-satoshi">
                       Inteligência <span className="text-blue-400">Artificial</span> que Trabalha por Você
                     </h3>
-                    <p className="text-gray-200 text-base sm:text-xl leading-relaxed mb-6 sm:mb-8 font-satoshi">
+                    <p className="text-gray-200 text-xl leading-relaxed mb-8 font-satoshi">
                       Com o poder da automação de processos, utilizamos o N8N para criar automações inteligentes para empresas diretamente no WhatsApp. Nossos fluxos automatizados capturam leads e nutrem relacionamentos de forma automática. Sua empresa operando 24/7, convertendo visitantes em clientes enquanto você dorme.
                     </p>
-                    <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="flex items-center gap-3">
                       <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
-                      <p className="text-blue-400 font-semibold font-satoshi text-sm sm:text-lg">Fluxos inteligentes em operação contínua</p>
+                      <p className="text-blue-400 font-semibold font-satoshi text-lg">Fluxos inteligentes em operação contínua</p>
                     </div>
                   </div>
                   
@@ -117,13 +117,13 @@ const AutomacaoPage = () => {
           </section>
 
           {/* The Solution Story Section */}
-          <section className="py-24 sm:py-32">
+          <section className="py-32">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16 animate-fade-in">
-                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 font-satoshi">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-satoshi">
                   E se Você Nunca Mais Perdesse um Cliente?
                 </h2>
-                <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto font-satoshi">
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto font-satoshi">
                   Imagine acordar todo dia com novos leads qualificados esperando por você.
                 </p>
               </div>
@@ -166,12 +166,12 @@ const AutomacaoPage = () => {
           </section>
 
           {/* Transformation Results Section - Updated with white text and summarized description */}
-          <section className="py-24 sm:py-32">
+          <section className="py-32">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="relative">
                 <div className="relative p-16 text-center animate-fade-in">
                   <div className="relative z-10">
-                    <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-8 sm:mb-12 font-satoshi leading-tight">
+                    <h2 className="text-5xl md:text-6xl font-bold text-white mb-12 font-satoshi leading-tight">
                       A Transformação
                       <br />
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 animate-pulse">
@@ -179,17 +179,17 @@ const AutomacaoPage = () => {
                       </span>
                     </h2>
                     
-                    <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8 text-base sm:text-lg leading-relaxed">
-                      <p className="text-white font-satoshi text-base sm:text-xl">
+                    <div className="max-w-4xl mx-auto space-y-8 text-lg leading-relaxed">
+                      <p className="text-white font-satoshi text-xl">
                         Aumento médio de 300% na conversão e redução de 80% no tempo de resposta. 
                         É uma revolução no relacionamento com clientes - enquanto concorrentes dormem, você vende.
                       </p>
                       
                       <div className="pt-8">
-                        <p className="text-lg sm:text-2xl text-blue-300 font-semibold font-satoshi mb-3 sm:mb-4">
+                        <p className="text-2xl text-blue-300 font-semibold font-satoshi mb-4">
                           O futuro do atendimento chegou.
                         </p>
-                        <p className="text-base sm:text-xl text-white font-satoshi">
+                        <p className="text-xl text-white font-satoshi">
                           A pergunta é: você vai liderar ou vai ficar para trás?
                         </p>
                       </div>
@@ -201,13 +201,13 @@ const AutomacaoPage = () => {
           </section>
 
           {/* Final CTA Section - without button */}
-          <section className="py-24 sm:py-32">
+          <section className="py-32">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="p-16 animate-fade-in">
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 sm:mb-8 font-satoshi">
+                <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 font-satoshi">
                   Pare de Perder Clientes Agora Mesmo
                 </h2>
-                <p className="text-lg sm:text-2xl text-gray-300 mb-10 sm:mb-12 font-satoshi max-w-4xl mx-auto leading-relaxed">
+                <p className="text-2xl text-gray-300 mb-12 font-satoshi max-w-4xl mx-auto leading-relaxed">
                   Em 30 dias, você pode ter uma máquina de vendas funcionando 24/7. 
                   Ou pode continuar perdendo oportunidades para quem já saiu na frente.
                 </p>
@@ -215,7 +215,7 @@ const AutomacaoPage = () => {
                 <div className="flex justify-center">
                   <button 
                     onClick={handleWhatsAppClick}
-                    className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi"
+                    className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 text-base rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 hover:scale-105 font-satoshi"
                   >
                     Quero Minha Automação Agora
                   </button>

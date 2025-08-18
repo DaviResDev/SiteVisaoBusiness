@@ -128,7 +128,7 @@ const AboutPage = () => {
                   </p>
                 </div>
                 
-                <div className="flex justify-center order-last md:order-last">
+                <div className="flex justify-center order-first md:order-last">
                   <div className="w-full max-w-sm sm:max-w-md md:w-[28rem] h-48 sm:h-64 md:h-80 rounded-2xl sm:rounded-3xl border-2 border-blue-400/30 overflow-hidden shadow-2xl">
                     <img 
                       src="https://i.imgur.com/1ezmc9I.jpeg" 

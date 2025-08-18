@@ -155,7 +155,7 @@ const ContactPage = () => {
         <main className="pt-20 sm:pt-32 pb-16">
           {/* Hero Section */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
-            <div className="text-center animate-fade-in mt-2 sm:mt-4">
+            <div className="text-center animate-fade-in">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 font-satoshi">
                 Transforme seu negócio com{' '}
                 <span className="text-blue-400">tecnologia</span>

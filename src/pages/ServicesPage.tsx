@@ -83,7 +83,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full relative bg-gradient-to-b from-black to-gray-900 mobile-unified">
+    <div className="min-h-screen w-full relative bg-gradient-to-b from-black to-gray-900">
       <CentralNavbar />
       
       <main className="pt-32">

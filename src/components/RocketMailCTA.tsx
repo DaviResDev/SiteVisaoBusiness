@@ -16,12 +16,12 @@ const RocketMailCTA = () => {
   ];
 
   return (
-    <section className="py-14 sm:py-20">
+    <section className="py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">          
           {/* Conteúdo */}
-          <div className="relative z-10 p-8 sm:p-12 lg:p-16 text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-satoshi leading-tight">
+          <div className="relative z-10 p-12 lg:p-16 text-center">
+            <h2 className="text-4xl lg:text-6xl font-bold mb-6 font-satoshi leading-tight">
               <span className="text-white">Transforme seu email marketing</span>
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
@@ -29,13 +29,13 @@ const RocketMailCTA = () => {
               </span>
             </h2>
 
-            <p className="text-base sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed font-satoshi">
+            <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-satoshi">
               Junte-se a centenas de empresas que já revolucionaram seus resultados com o <span className="text-blue-400">Rocket</span><span className="text-white">Mail</span>. 
               Não perca mais tempo com processos manuais quando você pode automatizar tudo.
             </p>
 
             {/* Lista de benefícios */}
-            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 mb-8 sm:mb-12 max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4 mb-12 max-w-3xl mx-auto">
               {ctaPoints.map((point, index) => (
                 <div key={index} className="flex items-center gap-3 text-left">
                   <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0" />
@@ -48,10 +48,10 @@ const RocketMailCTA = () => {
             <div className="flex justify-center">
               <button 
                 onClick={handleWhatsAppClick}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-2xl hover:shadow-blue-500/40 hover:scale-105 flex items-center gap-3 font-satoshi"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-2xl hover:shadow-blue-500/40 hover:scale-105 flex items-center gap-3 font-satoshi"
               >
                 Agendar Apresentação
-                <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6" />
+                <ArrowRight className="w-6 h-6" />
               </button>
             </div>
           </div>
