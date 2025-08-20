@@ -11,8 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0",
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.9.0",
+    "@langchain/anthropic": "^0.3.26",
+    "@langchain/openai": "^0.6.9",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
@@ -48,8 +51,10 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.3.0",
     "input-otp": "^1.2.4",
+    "langchain": "^0.3.31",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
+    "openai": "^5.13.1",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.3.1",
