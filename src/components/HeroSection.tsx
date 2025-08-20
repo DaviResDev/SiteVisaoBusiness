@@ -41,11 +41,11 @@ const HeroSection = () => {
           {/* Texto principal - EXATO da imagem */}
           <div className="text-left animate-fade-in relative z-20 max-w-md sm:max-w-lg md:max-w-xl">
             {/* Título principal - EXATO da imagem */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-satoshi font-bold leading-tight mb-6 sm:mb-8 text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-satoshi font-bold leading-tight mb-6 sm:mb-8 text-white">
               <span className="text-white">Automatize.</span>
               <br />
               <span className="text-gray-400">Escale. </span>
-              <span className="text-blue-600 font-extrabold">Inove.</span>
+              <span className="text-[#4F8EF7] font-extrabold">Inove.</span>
             </h1>
             
             {/* Texto descritivo - EXATO da imagem */}
@@ -68,10 +68,10 @@ const HeroSection = () => {
                 <span className="whitespace-nowrap">Agendar Demonstração</span>
               </button>
               
-              {/* Botão cinza escuro - EXATO da imagem */}
+              {/* Botão cinza escuro transparente - EXATO da imagem */}
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="bg-gradient-to-r from-gray-800/80 to-gray-900/60 border border-gray-600/40 text-white font-bold px-6 sm:px-8 py-4 sm:py-5 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-gray-900/90 hover:to-gray-800/70 hover:border-gray-500/50 font-satoshi backdrop-blur-sm w-full sm:w-auto sm:min-w-[220px] text-base sm:text-lg"
+                className="bg-gray-800/40 border border-gray-500/60 text-white font-bold px-6 sm:px-8 py-4 sm:py-5 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gray-700/50 hover:border-gray-400/70 font-satoshi backdrop-blur-sm w-full sm:w-auto sm:min-w-[220px] text-base sm:text-lg"
               >
                 <span className="whitespace-nowrap">Conhecer Soluções</span>
                 <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
