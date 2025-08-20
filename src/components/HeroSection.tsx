@@ -33,10 +33,10 @@ const HeroSection = () => {
         <div className="flex items-center min-h-[80vh]">
           
           {/* Coluna de conteúdo à esquerda - EXATO da segunda imagem */}
-          <div className="w-full lg:w-1/2 max-w-lg">
+          <div className="w-full lg:w-1/2 max-w-md">
             
             {/* Título principal - EXATO da segunda imagem */}
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-8 font-satoshi">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-6 font-satoshi">
               <div className="text-white">Automatize.</div>
               <div>
                 <span className="text-gray-400">Escale. </span>
@@ -45,29 +45,29 @@ const HeroSection = () => {
             </h1>
             
             {/* Texto descritivo - EXATO da segunda imagem */}
-            <div className="text-gray-200 text-lg lg:text-xl leading-relaxed mb-10 font-satoshi space-y-2">
+            <div className="text-gray-200 text-base lg:text-lg leading-relaxed mb-8 font-satoshi space-y-2">
               <p>Dê o próximo passo rumo ao futuro.</p>
               <p>Automatize com <span className="text-white font-medium">inteligência</span>, escale com <span className="text-white font-medium">segurança</span>.</p>
             </div>
 
             {/* Botões verticais - EXATO da segunda imagem */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               {/* Botão azul principal */}
               <button 
                 onClick={handleScheduleDemo}
-                className="w-full max-w-[280px] bg-[#4F8EF7] hover:bg-[#3b82f6] text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg font-satoshi"
+                className="w-full max-w-[250px] bg-[#4F8EF7] hover:bg-[#3b82f6] text-white font-semibold px-5 py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg font-satoshi text-sm"
               >
-                <Play className="w-5 h-5" fill="currentColor" />
+                <Play className="w-4 h-4" fill="currentColor" />
                 <span>Agendar Demonstração</span>
               </button>
               
               {/* Botão secondary transparente - EXATO da segunda imagem */}
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="w-full max-w-[280px] bg-gray-800/30 border border-gray-600/40 hover:bg-gray-700/40 hover:border-gray-500/50 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm font-satoshi"
+                className="w-full max-w-[250px] bg-gray-800/40 border border-gray-600/50 hover:bg-gray-700/50 hover:border-gray-500/60 text-white font-semibold px-5 py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm font-satoshi text-sm"
               >
                 <span>Conhecer Soluções</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>
