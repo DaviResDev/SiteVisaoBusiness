@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-gradient-to-b from-[#1a2332] via-[#0f1521] to-[#1a2332]">
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-gradient-to-b from-[#0a0f1a] via-[#050b2a] to-[#0a0f1a]">
       
       {/* Braço robótico metálico à direita - EXATO da segunda imagem */}
       <div className="absolute top-0 right-0 bottom-0 w-1/2 lg:w-2/5 z-10 flex items-center justify-end pointer-events-none">
@@ -61,10 +61,10 @@ const HeroSection = () => {
                 <span>Agendar Demonstração</span>
               </button>
               
-              {/* Botão secondary transparente */}
+              {/* Botão secondary transparente - EXATO da segunda imagem */}
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="w-full max-w-[280px] bg-transparent border border-gray-500/50 hover:border-gray-400/70 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm font-satoshi"
+                className="w-full max-w-[280px] bg-gray-800/30 border border-gray-600/40 hover:bg-gray-700/40 hover:border-gray-500/50 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm font-satoshi"
               >
                 <span>Conhecer Soluções</span>
                 <ArrowRight className="w-5 h-5" />
