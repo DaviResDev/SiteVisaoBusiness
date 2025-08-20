@@ -16,65 +16,58 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-gradient-to-b from-[#1a2332] via-[#0f1521] to-[#1a2332]">
       
-      {/* Background - gradiente azul-escuro exato da imagem */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#050b2a] via-[#0a1a3a] to-[#050b2a] z-0"
-      />
-
-      {/* Braço robótico metálico à direita - EXATO da imagem */}
-      <div className="absolute top-0 right-0 h-full w-full sm:w-3/4 md:w-2/3 lg:w-1/2 z-10 flex items-center justify-end pointer-events-none">
+      {/* Braço robótico metálico à direita - EXATO da segunda imagem */}
+      <div className="absolute top-0 right-0 bottom-0 w-1/2 lg:w-2/5 z-10 flex items-center justify-end pointer-events-none">
         <img 
           src="https://i.imgur.com/VFtnuiu_d.webp?maxwidth=760&fidelity=grand"
           alt="Braço robótico metálico"
-          className="w-full h-full object-contain object-right"
-          style={{maxHeight: '100%', maxWidth: '100%'}}
+          className="w-full h-auto max-h-full object-contain object-center-right opacity-90"
           draggable="false"
         />
       </div>
 
-      {/* Content - posicionamento EXATO da imagem */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex flex-col items-start justify-center h-screen">
+      {/* Content Container - EXATO da segunda imagem */}
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 py-20">
+        <div className="flex items-center min-h-[80vh]">
           
-          {/* Texto principal - EXATO da imagem */}
-          <div className="text-left animate-fade-in relative z-20 max-w-md sm:max-w-lg md:max-w-xl">
-            {/* Título principal - EXATO da imagem */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-satoshi font-bold leading-tight mb-6 sm:mb-8 text-white">
-              <span className="text-white">Automatize.</span>
-              <br />
-              <span className="text-gray-400">Escale. </span>
-              <span className="text-[#4F8EF7] font-extrabold">Inove.</span>
+          {/* Coluna de conteúdo à esquerda - EXATO da segunda imagem */}
+          <div className="w-full lg:w-1/2 max-w-lg">
+            
+            {/* Título principal - EXATO da segunda imagem */}
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-8 font-satoshi">
+              <div className="text-white">Automatize.</div>
+              <div>
+                <span className="text-gray-400">Escale. </span>
+                <span className="text-[#4F8EF7]">Inove.</span>
+              </div>
             </h1>
             
-            {/* Texto descritivo - EXATO da imagem */}
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 sm:mb-12 leading-relaxed font-satoshi">
-              Dê o próximo passo rumo ao{' '}
-              <span className="text-blue-300 font-semibold">futuro</span>.
-              <br />
-              Automatize com <span className="text-white font-semibold">inteligência</span>, 
-              escale com <span className="text-gray-200 font-semibold">segurança</span>.
-            </p>
+            {/* Texto descritivo - EXATO da segunda imagem */}
+            <div className="text-gray-200 text-lg lg:text-xl leading-relaxed mb-10 font-satoshi space-y-2">
+              <p>Dê o próximo passo rumo ao futuro.</p>
+              <p>Automatize com <span className="text-white font-medium">inteligência</span>, escale com <span className="text-white font-medium">segurança</span>.</p>
+            </div>
 
-            {/* Botões empilhados verticalmente - EXATO da imagem */}
-            <div className="flex flex-col gap-4 sm:gap-6">
-              {/* Botão azul vibrante - EXATO da imagem */}
+            {/* Botões verticais - EXATO da segunda imagem */}
+            <div className="space-y-4">
+              {/* Botão azul principal */}
               <button 
                 onClick={handleScheduleDemo}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-6 sm:px-8 py-4 sm:py-5 rounded-xl border border-blue-500/30 shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:from-blue-700 hover:to-blue-800 hover:shadow-blue-500/40 hover:scale-105 font-satoshi w-full sm:w-auto sm:min-w-[220px] text-base sm:text-lg"
+                className="w-full max-w-[280px] bg-[#4F8EF7] hover:bg-[#3b82f6] text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg font-satoshi"
               >
-                <Play className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
-                <span className="whitespace-nowrap">Agendar Demonstração</span>
+                <Play className="w-5 h-5" fill="currentColor" />
+                <span>Agendar Demonstração</span>
               </button>
               
-              {/* Botão cinza escuro transparente - EXATO da imagem */}
+              {/* Botão secondary transparente */}
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="bg-gray-800/40 border border-gray-500/60 text-white font-bold px-6 sm:px-8 py-4 sm:py-5 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-3 group hover:bg-gray-700/50 hover:border-gray-400/70 font-satoshi backdrop-blur-sm w-full sm:w-auto sm:min-w-[220px] text-base sm:text-lg"
+                className="w-full max-w-[280px] bg-transparent border border-gray-500/50 hover:border-gray-400/70 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm font-satoshi"
               >
-                <span className="whitespace-nowrap">Conhecer Soluções</span>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+                <span>Conhecer Soluções</span>
+                <ArrowRight className="w-5 h-5" />
               </button>
             </div>
           </div>
